@@ -1,10 +1,19 @@
-# DCDBHandler
-FMDB的封装，轻量级处理数据库框架。直接使用runtime直接存储对象
+## DCDBHandler
+FMDB的封装，轻量级处理数据库框架。使用runtime直接存储对象
 
-# 注意
+## 安装
+
+#### CocoaPods
+> pod 'DCDBHandler'
+
+#### 手动安装
+> 将DBHandler文件夹拽入项目中，导入头文件：#import "DCDBHandler.h"
+
+
+## 注意
 目前支持的对象类型 NSString, NSNumber, NSInteger
 
-# 如何使用
+## 如何使用
 ```Objective-C
 /**
  *  新插入或者更新数据
@@ -40,5 +49,5 @@ FMDB的封装，轻量级处理数据库框架。直接使用runtime直接存储
 
 ```
 
-# 数据迁移 
+## 数据迁移 
 遵守 DCDBMigrationProtocol 协议即可
